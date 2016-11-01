@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="key_settings_about_appinfo">settings_about_appinfo</string>
+    <string name="key_settings_about_oss">settings_about_oss</string>
+    <string name="key_settings_about_tos">settings_about_tos</string>
+    <string name="key_settings_about_privacypolicy">settings_about_privacypolicy</string>
+
+    <string name="key_nginx_manager_nginx_status">nginx_manager_nginx_status</string>
+    <string name="key_nginx_manager_properties_host">nginx_manager_properties_host</string>
+    <string name="key_nginx_manager_properties_port">nginx_manager_properties_port</string>
+</resources>

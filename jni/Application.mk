@@ -1,0 +1,4 @@
+ 
+ APP_ABI := armeabi
+ 
+ 

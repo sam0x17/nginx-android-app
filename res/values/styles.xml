@@ -1,0 +1,16 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/Widget.Nginx.ActionBar</item>
+    </style>
+
+    <style name="Widget.Nginx.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/actionbar_background</item>
+        <item name="android:titleTextStyle">@style/TextAppearance.Nginx.Widget.ActionBar.Title</item>
+    </style>
+ 
+    <style name="TextAppearance.Nginx.Widget.ActionBar.Title" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>

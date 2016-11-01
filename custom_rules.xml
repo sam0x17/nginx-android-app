@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="android-nginx-custom-rules">
+
+    <condition property="ndk.dir" value="${env.ANDROID_NDK_HOME}">
+        <isset property="env.ANDROID_NDK_HOME" />
+    </condition>
+
+    <fail
+          message="ndk.dir is missing in your local.properties file."
+          unless="ndk.dir" />
+
+    <target name="-pre-build">
+        <exec executable="${ndk.dir}/ndk-build" failonerror="true"/>
+    </target>
+
+    <target name="-pre-clean">
+        <exec executable="${ndk.dir}/ndk-build">
+        <arg value="clean"/>
+            </exec>
+        <delete dir="obj" />
+    </target>
+
+</project>

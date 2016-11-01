@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:title="@string/status">
+        
+        <SwitchPreference
+            android:key="@string/key_nginx_manager_nginx_status"
+            android:title="@string/status"
+            android:summaryOn="@string/nginx_is_running"
+            android:summaryOff="@string/nginx_is_stopped" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/properties">
+
+        <PreferenceScreen
+            android:key="@string/key_nginx_manager_properties_host"
+            android:title="@string/host"
+            android:summary="@string/default_host" />
+
+        <PreferenceScreen
+            android:key="@string/key_nginx_manager_properties_port"
+            android:title="@string/port"
+            android:summary="@string/default_port" />
+        
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
