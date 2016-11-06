@@ -37,7 +37,7 @@ public abstract class AbstractSettingsFragment extends PreferenceFragment
     @Override
     public void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.settings);
+        //addPreferencesFromResource(R.xml.settings);
 
         Bundle args = new Bundle();
         args.putParcelableArrayList(OpenSourceLicenseFragment.EXTRA_OSS,
@@ -53,7 +53,7 @@ public abstract class AbstractSettingsFragment extends PreferenceFragment
 
         Bundle tosArgs = new Bundle();
         tosArgs.putInt(Intent.EXTRA_TITLE, R.string.terms_of_service);
-        tosArgs.putInt(Intent.EXTRA_TEXT, R.raw.termsofservice);
+        //tosArgs.putInt(Intent.EXTRA_TEXT, R.raw.termsofservice);
         mTermsOfServiceFragment = new TextDialogFragment();
         mTermsOfServiceFragment.setArguments(tosArgs);
 
